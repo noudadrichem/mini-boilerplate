@@ -1,5 +1,4 @@
 ## simple boilerplate
-=====
 #### Supports
   * SCSS
   * ES6 (TODO)
