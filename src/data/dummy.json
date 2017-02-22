@@ -1,4 +1,5 @@
 {
-	"dummy": "data",
-	"yey": "this also works!"
+    "img": "assets/images/octocat.png",
+    "name": "Noud Adrichem's",
+    "header": "Mini boilerplate"
 }

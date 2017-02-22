@@ -1,27 +1,29 @@
 ## simple boilerplate
 #### Supports
+  * ES6
   * SCSS
-  * ES6 (TODO)
-  * Gulp-uglify
-  * Local JSON data
+  * JSON
 
 #### File tree
 ```
+.
+├── LICENSE
 ├── README.md
 ├── gulpfile.js
 ├── package.json
-└── src
-    ├── data
-    │   └── dummy.json
-    ├── images
-    │   └── octocat.png
-    ├── index.html
-    ├── js
-    │   └── master.js
-    └── scss
-        ├── master.scss
-        └── partials
-            └── _heading.scss
+├── src
+│   ├── data
+│   │   └── dummy.json
+│   ├── images
+│   │   └── octocat.png
+│   ├── index.html
+│   ├── js
+│   │   └── master.js
+│   └── scss
+│       ├── master.scss
+│       └── partials
+│           └── _heading.scss
+└── webpack.config.js
 ```
 
 #### How to use
