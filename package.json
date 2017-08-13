@@ -4,7 +4,9 @@
   "description": "ini mini manimo",
   "main": "https://github.com/noudadrichem/mini-boilerplate",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "dev": "gulp dev",
+    "clean": "gulp clean"
   },
   "author": "Noud Adrichem",
   "license": "MIT",
@@ -15,12 +17,15 @@
     "browser-sync": "^2.18.7",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.1",
     "gulp-uglify": "^2.0.1",
+    "handlebars": "^4.0.10",
+    "handlebars-loader": "^1.5.0",
     "json-loader": "^0.5.4",
     "webpack-stream": "^3.2.0"
   }
