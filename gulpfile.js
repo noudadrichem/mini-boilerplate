@@ -12,10 +12,10 @@ const sourcemaps = require('gulp-sourcemaps')
 const webpack = require('webpack-stream')
 
 gulp.task('html', function() {
-	return gulp.src('./src/**/*.html')
-		.pipe(htmlmin({
-			collapseWhitespace: true
-		}))
+	return gulp.src(['./src/**/*.html', './src/**/*.php'])
+		// .pipe(htmlmin({
+		// 	collapseWhitespace: true
+		// }))
 		.pipe(gulp.dest('./public'))
 		.pipe(browserSync.reload({
 			stream: true,
@@ -62,12 +62,13 @@ gulp.task('babel', function() {
 })
 
 gulp.task('server', function() {
-	browserSync.init({
-		server: {
-			baseDir: './public'
-		}
-	})
+	// browserSync.init({
+	// 	server: {
+	// 		baseDir: './public'
+	// 	}
+	// })
 	gulp.watch('./src/**/*.html', ['html'])
+	gulp.watch('./src/**/*.php', ['html'])
 	gulp.watch('./src/scss/**/*.scss', ['sass'])
 	gulp.watch('./src/data/*.json', ['json'])
 	gulp.watch('./src/js/**/*.js', ['babel'])
